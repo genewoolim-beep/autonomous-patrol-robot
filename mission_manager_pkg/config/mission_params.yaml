@@ -1,0 +1,6 @@
+# mission_manager 파라미터.
+# launch에서 직접 넣어도 되지만, 파일로 관리하면 튜닝이 편하다.
+
+/**/mission_manager:
+  ros__parameters:
+    tick_hz: 10.0   # 상태 실행 루프 주파수 (초당 검사 횟수)

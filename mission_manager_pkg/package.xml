@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>mission_manager_pkg</name>
+  <version>0.1.0</version>
+  <description>
+    자동 전이 상태머신 기반 미션 매니저. Auto SLAM / Nav2 위에서
+    순찰 -> 추적 -> 교전 -> 복귀 상태를 조건에 따라 자동으로 전환한다.
+  </description>
+  <maintainer email="you@example.com">your_name</maintainer>
+  <license>Apache-2.0</license>
+
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
