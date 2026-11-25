@@ -24,6 +24,12 @@ ROS 2 Humble · Nav2 · SLAM · explore_lite · TurtleBot 4 (namespace /robot4) 
 
 My part: SLAM, Nav2 and the patrol behavior, everything that moves the robot when it is not aiming.
 
+## System design
+
+![System design](docs/system_design.png)
+
+Design diagram from the planning stage (editable source: `docs/system_design.drawio`). It shows the operator-command version of the state machine; the final code switches states automatically from HP and detection, as described below.
+
 ## What the system does
 
 1. **Patrol.** The robot undocks, runs SLAM and `explore_lite`, and drives toward unexplored frontiers while building the map.
